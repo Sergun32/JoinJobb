@@ -17,7 +17,7 @@
 // 5. Распечатать результат
 
 // 1. Сформировать массив содержащий символы и числа
-char [] array = new char [25];
+char [] array = new char [20];
 Random rnd = new Random();
 for(int i = 0; i< array.Length; i++)
 {
@@ -25,3 +25,11 @@ for(int i = 0; i< array.Length; i++)
     Console.Write("{0} ", array[i]);
 }
 Console.WriteLine();
+
+// 2. Проверка массива на наличие чисел
+for(int i = 0; i< array.Length; i++)
+{
+    char symb = array[i];
+    bool flag = symb >= '0' && symb <= '9';
+    Console.Write($" {flag}");
+}
