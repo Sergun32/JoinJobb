@@ -34,7 +34,9 @@ for(int i = 0; i< array.Length; i++)
     char symb = array[i];
     bool flag = symb >= '0' && symb <= '9';
     Console.Write($" {flag}");
+
 }
+Console.WriteLine();
 // 3 и 4 . Сформируем новый пустой массив и заполним с учетом проверки
 
 char [] finish = new char [20];
