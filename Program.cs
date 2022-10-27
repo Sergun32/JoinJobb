@@ -47,4 +47,8 @@ for(int i = 0; i < array.Length; i++)
     }
 }
 // 5 Распечатаем новый массив с результатом
-
+Console.WriteLine("Так выглядит наш массив без чисел:  ");
+for(int i = 0; i < finish.Length; i++)
+{
+    Console.Write("{0} ", finish[i]);
+}
