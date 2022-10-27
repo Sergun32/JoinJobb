@@ -19,6 +19,7 @@
 // 1. Сформировать массив содержащий символы и числа
 char [] array = new char [20];
 Random rnd = new Random();
+    Console.WriteLine("Так выглядит наш массив с символами и числами:  ");
 for(int i = 0; i< array.Length; i++)
 {
     array[i]= Convert.ToChar(rnd.Next(48, 122));
@@ -27,9 +28,23 @@ for(int i = 0; i< array.Length; i++)
 Console.WriteLine();
 
 // 2. Проверка массива на наличие чисел
+    Console.WriteLine("Выполняем проверку: False = символ   True = цифра ");
 for(int i = 0; i< array.Length; i++)
 {
     char symb = array[i];
     bool flag = symb >= '0' && symb <= '9';
     Console.Write($" {flag}");
 }
+// 3 и 4 . Сформируем новый пустой массив и заполним с учетом проверки
+
+char [] finish = new char [20];
+for(int i = 0; i < array.Length; i++)
+{
+    char symb = array[i];
+    if(symb > 57)
+    {
+        finish[i] = symb;
+    }
+}
+// 5 Распечатаем новый массив с результатом
+
