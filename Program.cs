@@ -15,3 +15,13 @@
 // 3. Сформировать новый пустой массив
 // 4. Поместить символы в новый массив
 // 5. Распечатать результат
+
+// 1. Сформировать массив содержащий символы и числа
+char [] array = new char [25];
+Random rnd = new Random();
+for(int i = 0; i< array.Length; i++)
+{
+    array[i]= Convert.ToChar(rnd.Next(48, 122));
+    Console.Write("{0} ", array[i]);
+}
+Console.WriteLine();
